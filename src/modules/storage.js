@@ -1,19 +1,11 @@
-class Storage {
-  static getUser() {
-    let users;
-    if (localStorage.getItem('users') == null) {
-      users = [];
-    } else {
-      users = JSON.parse(localStorage.getItem('users'));
-    }
-    return users;
-  }
-
-  static addUser(user) {
-    const users = this.getUser();
-    users.push(user);
-    localStorage.setItem('users', JSON.stringify(users));
-  }
-}
-
-export default Storage;
+const newScore = async (url, data) => {
+  const post = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  };
+  await fetch(url, post);
+};
+export default newScore;

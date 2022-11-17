@@ -12,7 +12,7 @@
             <div class="left-side">
                 <div class="left-header">
                     <h2>Recent scores</h2>
-                    <button>Refresh</button>
+                    <button class="refresh-btn">Refresh</button>
                 </div>
                 <table>
                     <tbody id="user-list">
@@ -23,15 +23,13 @@
                 <div class="right-header">
                     <h2>Add your score</h2>
                 </div>
-                <form id="user-form">
-                    <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
-                    <input type="number" id="score" name="score" placeholder="Your score" required><br>
+                <form id="user-form" action="submit">
+                    <input type="text" id="name" name="name" placeholder="Name"><br><br>
+                    <input type="number" id="score" name="score" placeholder="Score"><br>
                     <button class="add-btn" type="submit">Submit</button><br>
-
                 </form>
             </div>
         </div>
     </section>
-<script src="index.js"></script>
 </body>
 </html>
