@@ -17,7 +17,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "name": "-leaderboard-list-app",
-  "description": "",
+  "description": "<a name=\"readme-top\"></a>",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
