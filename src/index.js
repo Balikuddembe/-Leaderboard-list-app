@@ -2,8 +2,7 @@ import './style.css';
 import newScore from './modules/storage.js';
 import getData from './modules/fetch.js';
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/';
-// const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fadf/scores';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/gQxRXsSqZhbfITVQg4H7/scores';
 document.querySelector('.refresh-btn').addEventListener('click', () => {
   window.location.reload();
 });
